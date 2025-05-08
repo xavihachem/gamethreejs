@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rabbit Escape - 3D Game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="score-container">Time: <span id="timer">0</span>s</div>
+      <div id="instructions">
+        <h2>Rabbit Escape</h2>
+        <p>Help the rabbit escape the room by finding the exit!</p>
+        <p>Controls: WASD or Arrow Keys to move, Space to jump</p>
+        <button id="start-button">Start Game</button>
+      </div>
+      <div id="win-screen" class="hidden">
+        <h2>You Escaped!</h2>
+        <p>
+          Congratulations! You helped the rabbit escape in
+          <span id="final-time">0</span> seconds!
+        </p>
+        <button id="restart-button">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/OBJLoader.js"></script>
+
+    <!-- Game Scripts -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
